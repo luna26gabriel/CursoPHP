@@ -22,7 +22,7 @@ foreach($usuarios as $row){
 
     foreach($row as $index => $value){
 
-        array_push($data, $index . " :: " . $value);
+        array_push($data, $value);
 
     }
 
