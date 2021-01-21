@@ -1,6 +1,6 @@
 <?php
 
-$email = $_POST['inputemail'];
+$email = $_POST['inputEmail'];
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
@@ -23,7 +23,7 @@ curl_close($ch);
 
 
 if($recaptcha["success"] === true){
-    echo "OK, " . $_POST['inputemail'];
+    echo "OK, " . $_POST['inputEmail'];
 } else {
     header("Location: exemplo04.php");
 }
