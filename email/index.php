@@ -35,19 +35,19 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "naoseimaseisso33@gmail.com";
+$mail->Username = "email@gmail.com";
 
 //Password to use for SMTP authentication
-$mail->Password = "senha";
+$mail->Password = "";
 
 //Set who the message is to be sent from
-$mail->SetFrom('naoseimaseisso33@gmail.com', 'Luna');
+$mail->SetFrom('email@gmail.com', 'Luna');
 
 //Set an alternative reply-to address
 //$mail->addReplyTo('', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('gabrielluna2000@gmail.com', 'Gabriel');
+$mail->addAddress('email@gmail.com', 'Gabriel');
 
 //Set the subject line
 $mail->Subject = 'Testando a classe PHPMailer com Gmail';
